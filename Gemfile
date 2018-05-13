@@ -34,6 +34,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'aws-sdk'
+gem 'stripe'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
