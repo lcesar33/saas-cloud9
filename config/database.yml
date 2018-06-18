@@ -21,7 +21,7 @@ development:
   adapter: postgresql
   #database: db/development
   username: vmw7
-  password: larry33
+  password: larry33$
   host: localhost
   encoding: UTF8
   pool: 5
@@ -31,7 +31,7 @@ test:
   database: saas-project-app_test
   adapter: postgresql
   username: vmw7
-  password: larry33
+  password: larry33$
   host: localhost
   encoding: UTF8
   pool: 5
