@@ -14,7 +14,8 @@
       <tr>
         <td><%= project_user.email %></td>
         <td>
-          <% if !project_user.is_admin? %>
+          <%# if !project_user.is_admin? %>
+          <% if current_user.is_admin? %>
             <%= link_to "Remove", user_project_path(project_user.user_projects.find_by(project_id: @project.id),
                                   tenant_id: @project.tenant_id),
                                   :method => :delete,
