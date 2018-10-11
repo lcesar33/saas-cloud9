@@ -62,10 +62,8 @@ class ProjectsController < ApplicationController
   def users
     #we have to find the id of the admin user for current tenant
     @id_admin = Member.where(tenant_id: 1, first_name: "Admin").map { |usera| [usera.user_id] }
-
     #@project_users = (@project.users + (User.where(tenant_id: @tenant.id, is_admin: true))) - [current_user]
     @project_users = (@project.users + (User.where(id: @id_admin))) - [current_user]
-    
     @other_users = @tenant.users.where(is_admin: false) - (@project_users + [current_user])
   end
   
