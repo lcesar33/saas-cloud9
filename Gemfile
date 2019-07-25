@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails', '4.2.3'
-gem 'rails', '4.2.10'
+#clp 25/07/19 updating rails for security reasons
+gem 'rails', '4.2.11.1'
 # Use postgresql as the database for Active Record
 #gem 'pg', '~> 0.15'
 gem 'pg', '~> 0.20.0'
