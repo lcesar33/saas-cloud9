@@ -11,7 +11,6 @@ ActionMailer::Base.smtp_settings = {
 :user_name => ENV['SENDGRID_USERNAME'],
 :password => ENV['SENDGRID_PASSWORD'],
 :domain => 'herokuapp.com',
-:from  => "cesar.lazarop@gmail.com",
 :enable_starttls_auto => true
 }
 

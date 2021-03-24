@@ -67,3 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+gem "sendgrid-ruby", "~> 6.4"
